@@ -1,0 +1,4 @@
+git add .
+git status
+git commit -m "Mô tả bla bla"
+git push /or/ git push -u origin main

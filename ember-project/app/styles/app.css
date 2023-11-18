@@ -17,6 +17,8 @@ nav {
   background: #407a8f;
 }
 
+
+
 nav .content-nav {
   display: flex;
   line-height: 2rem;
@@ -41,11 +43,12 @@ nav .content-nav ul li a:hover {
   color: #fff;
 }
 
-.content-nav form {
+.content-nav #input-search {
   position: relative;
+  
 }
 
-.content-nav form input {
+.content-nav #input-search {
   border: none;
   background: #fff;
   padding: 7px;
@@ -53,12 +56,10 @@ nav .content-nav ul li a:hover {
   border-radius: 12px;
 }
 
-.content-nav form button {
+.content-nav #input-search {
   padding: 5px;
   border-radius: 12px;
-  position: absolute;
-  right: 0;
-  top: 2px;
+  
   border: none;
   outline: none;
   background: #fff;
