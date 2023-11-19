@@ -1,0 +1,18 @@
+KHOA KỸ THUẬT VÀ CÔNG NGHỆ
+ BỘ MÔN CÔNG NGHỆ THÔNG TIN
+
+BÁO CÁO TIẾN ĐỘ CƠ SỞ NGÀNH
+Đợt báo cáo lần:1-Từ ngày:06/11/2023 đến 12/11/2023
+Họ và tên sinh viên:Nguyễn Đức Thịnh-MSSV:110121228
+Lớp:DA21TTB
+Tên đề tài:Tìm hiểu và sử dụng EmberJS framework để xây dựng ứng dụng website bán hàng.
+1.Nội dung đã thực hiện:
+-Đã hoàn thành đề cương chi tiết cho đề tài.
+-Tìm kiếm,thu thập,tham khảo các tài liệu liên quan đến đề tài.
+2. Nội dung công việc đang và sẽ thực hiện
+- Tiến hành xây dựng giao diện cho website qua các tài liệu tham khảo về đề tài.
+- Xây dựng chức năng hiển thị thông tin sản phẩm.
+-Chạy demo và viết báo cáo tiến độ.
+3. Những vướng mắc và kiến nghị
+Hiện tại em chưa gặp khó khăn trong việc làm đề tài. Nếu có thắc mắc hay khó
+khăn liên quan đến đề tài thì sẽ hỏi sau.
