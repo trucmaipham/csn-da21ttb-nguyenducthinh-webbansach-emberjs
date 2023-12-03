@@ -11,6 +11,7 @@
     <link integrity="" rel="stylesheet" href="{{rootURL}}assets/vendor.css">
     <link integrity="" rel="stylesheet" href="{{rootURL}}assets/my-project-2.css">
     <link rel="stylesheet" type="text/css" href="base.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script src="assets\js\vendor\modernizr-2.8.3.min.js"></script>
     {{content-for "head-footer"}}
   </head>
@@ -69,6 +70,13 @@
                       </div>
                   </div>
               </div>
+
+                <button class="btnlogin-popup">Dang ky</button>
+
+
+                
+
+              
           </nav>
 
           <!-- content -->
@@ -77,12 +85,13 @@
            
       </div>
   </section>
+    
 
   <!-- footer -->
   <footer>
     <div class="footer-item">
         <div class="img-footer">
-            <img src="#" alt="" />
+            <img src= "/ember-project/public/assets/imgs/gian.jpg" alt="" />
         </div>
         <div class="social-footer">
             <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100055023455955">
@@ -108,57 +117,57 @@
         let products = [
             {
                 id: 1,
-                name: 'Đắc nhân tâm',
+                name: '3 Người thầy vĩ đại',
                 price: 30000,
-                thumbail_url: '/assets/imgs/dacnhantam.jpg'
+                thumbail_url: '/assets/imgs/3nguoithanhvidai.jpg'
             },
             {
                 id: 2,
-                name: 'Giao tiếp bất kì ai',
+                name: 'Biết người dùng người quản người',
                 price: 76000,
-                thumbail_url: '/assets/imgs/giaotiepbatkyai.jpg'
+                thumbail_url: '/assets/imgs/bietnguoidungnguoiquannguoi.jpg'
             },
             {
                 id: 3,
-                name: 'Hành trình phương đông',
+                name: 'Bí mật tư duy triệu phú',
                 price: 76000,
-                thumbail_url: '/assets/imgs/hanhtrinhphuongdong.jpg'
+                thumbail_url: '/assets/imgs/bimattuyduytrieuphu.jpg'
             },
             {
                 id: 4,
-                name: 'Im lặng là bản năng',
+                name: 'Bước chậm giữa thế gian vội vả',
                 price: 36700,
-                thumbail_url: '/assets/imgs/imlanglabannang.jpg'
+                thumbail_url: '/assets/imgs/buocchamlagiuathegianvoiva.jpg'
             },
             {
                 id: 5,
-                name: '3 Người thầy vĩ đại',
+                name: 'Cảm xúc là kẻ thù số một của của thành công',
                 price: 76000,
-                thumbail_url: '/assets/imgs/3nguoithayvidai.jpg'
+                thumbail_url: '/assets/imgs/camxuclakethusomotcuathanhcong.jpg'
             },
             {
                 id: 6,
-                name: '7 thói quen bạn trẻ thành đạt',
+                name: 'Cây cam ngọt của tôi',
                 price: 76000,
-                thumbail_url: '/assets/imgs/7thoiquenbantrethanhdat.jpg'
+                thumbail_url: '/assets/imgs/caycamngotcuatoi.jpg'
             },
             {
                 id: 7,
-                name: 'Bạn đắt giá bao nhiêu',
+                name: 'Cư xử như đàn bà suy nghĩ như đàn ông',
                 price: 76000,
-                thumbail_url: '/assets/imgs/bandatgiabaonhieu.jpg'
+                thumbail_url: '/assets/imgs/cuxunhudanbasuynghinhudanong.jpg'
             },
             {
                 id: 8,
-                name: 'Dám nghĩ lớn',
+                name: 'Đắc nhân tâm',
                 price: 76000,
-                thumbail_url: '/assets/imgs/damnghilon.jpg'
+                thumbail_url: '/assets/imgs/dacnhantam.jpg'
             },
             {
                 id: 9,
-                name: 'Đánh thức con người phi thường',
+                name: 'Điềm tĩnh và nóng giận',
                 price: 76000,
-                thumbail_url: '/assets/imgs/danhthucconnguoiphithuong.jpg'
+                thumbail_url: '/assets/imgs/diemtinhvanonggian.jpg'
             },
             {
                 id: 10,
@@ -168,111 +177,133 @@
             },
             {
                 id: 11,
-                name: 'Đừng lựa chọn khi còn trẻ',
-                price: 76000,
-                thumbail_url: '/assets/imgs/dungluachonkhicontre.jpg'
-            },
-            {
-                id: 12,
-                name: 'Giao tiếp để thành công',
-                price: 76000,
-                thumbail_url: '/assets/imgs/giaotiepdethanhcong.jpg'
-            },
-            {
-                id: 13,
-                name: 'Hạt giống tâm hồn',
-                price: 76000,
-                thumbail_url: '/assets/imgs/hatgiongtamhon.jpg'
-            },
-            {
-                id: 14,
-                name: 'khéo ăn nói sẽ có được thiên hạ',
+                name: 'Khéo ăn nói sẽ có được thiên hạ',
                 price: 76000,
                 thumbail_url: '/assets/imgs/kheoannoisecoduocthienha.jpg'
             },
             {
-                id: 15,
-                name: 'Khí chất bao nhiêu để được hạnh phúc',
+                id: 12,
+                name: 'Giận',
                 price: 76000,
-                thumbail_url: '/assets/imgs/khichatbaonhieuhanhphuc.jpg'
+                thumbail_url: '/assets/imgs/gian.jpg'
+            },
+            {
+                id: 13,
+                name: 'Không bao giờ là thất bại',
+                price: 76000,
+                thumbail_url: '/assets/imgs/khongbaogiolathatbai.jpg'
+            },
+            {
+                id: 14,
+                name: 'Kỷ luật tự giác',
+                price: 76000,
+                thumbail_url: '/assets/imgs/kyluattugiac.jpg'
+            },
+            {
+                id: 15,
+                name: 'Làm chủ tư duy thay đổi vận mệnh',
+                price: 76000,
+                thumbail_url: '/assets/imgs/lamchutuyduythaydoivanmenh.jpg'
             },
             {
                 id: 16,
-                name: 'Khởi nghiệp bán lẻ',
+                name: 'Mình sinh ra đâu phải để buồn',
                 price: 76000,
-                thumbail_url: '/assets/imgs/khoinghiepbanle.jpg'
+                thumbail_url: '/assets/imgs/minhsinhradauphaidebuon.jpg'
             },
             {
                 id: 17,
-                name: 'Làm chủ tư duy thay đổi vận mệnh',
+                name: 'Muôn kiếp nhân sinh',
                 price: 76000,
-                thumbail_url: '/assets/imgs/lamchutuduythaydoivanmenh.jpg'
+                thumbail_url: '/assets/imgs/muonkiepnhansinh.jpg'
             },
             {
                 id: 18,
-                name: 'Lời từ chối hoàn hảo',
-                price: 76000,
-                thumbail_url: '/assets/imgs/loituchoihoanhao.jpg'
-            },
-            {
-                id: 19,
-                name: 'Luật tâm thức',
-                price: 76000,
-                thumbail_url: '/assets/imgs/luattamthuc.jpg'
-            },
-            {
-                id: 20,
-                name: 'Nghệ thuât bán hàng bậc cao',
-                price: 76000,
-                thumbail_url: '/assets/imgs/nghethuatbanhangbaccao.jpg'
-            },
-            {
-                id: 21,
                 name: 'Nghĩ giàu làm giàu',
                 price: 76000,
                 thumbail_url: '/assets/imgs/nghigiaulamgiau.jpg'
             },
             {
-                id: 22,
-                name: 'Người giỏi không phải làm tất cả',
+                id: 19,
+                name: 'Nghĩ lớn để thành công',
                 price: 76000,
-                thumbail_url: '/assets/imgs/nguoigioikhongphailamtatca.jpg'
+                thumbail_url: '/assets/imgs/nghilondethanhcong.jpg'
+            },
+            {
+                id: 20,
+                name: 'Người giàu có nhất thành Babylon',
+                price: 76000,
+                thumbail_url: '/assets/imgs/nguoigiauconhatthanhbabylon.jpg'
+            },
+            {
+                id: 21,
+                name: 'Nhà đầu tư thông minh',
+                price: 76000,
+                thumbail_url: '/assets/imgs/nhadaututhongminh.jpg'
+            },
+            {
+                id: 22,
+                name: 'Nhà giả Kim',
+                price: 76000,
+                thumbail_url: '/assets/imgs/nhagiakim.jpg'
             },
             {
                 id: 23,
-                name: 'Người nam châm',
+                name: 'Nhà Lãnh đạo không chức danh',
                 price: 76000,
-                thumbail_url: '/assets/imgs/nguoinamcham.jpg'
+                thumbail_url: '/assets/imgs/nhalanhdaokhongchucdanh.jpg'
             },
             {
                 id: 24,
-                name: 'Những đòn tâm lý thuyết phục',
+                name: 'Những đòn tâm lý trong thuyết phục',
                 price: 76000,
-                thumbail_url: '/assets/imgs/nhungdontamlythuyetphuc.jpg'
+                thumbail_url: '/assets/imgs/nhungdontamlytrongthuyetphuc.jpg'
             },
-            {
-                id: 25,
-                name: 'Những kẻ xuất chúng',
-                price: 76000,
-                thumbail_url: '/assets/imgs/nhungkexuatchung.jpg'
-            },
+            
             {
                 id: 26,
-                name: 'Sức mạnh tìm thức',
+                name: 'Tại sao đàn ông thích tình dục',
                 price: 76000,
-                thumbail_url: '/assets/imgs/sucmanhtimthuc.jpg'
+                thumbail_url: '/assets/imgs/taisaodanongthichtinhduc.jpg'
             },
             {
                 id: 27,
-                name: 'Tâm buông bỏ đời bình an',
+                name: 'Thiên tài bên trái kẻ điên bên phải',
                 price: 76000,
-                thumbail_url: '/assets/imgs/tambuongbodoibinhan.jpg'
+                thumbail_url: '/assets/imgs/thientaibentraikedienbenphai.jpg'
             },
             {
                 id: 28,
-                name: 'Thao túng tâm lý',
+                name: 'Thôi miên bằng ngôn từ',
                 price: 76000,
-                thumbail_url: '/assets/imgs/thaotungtamly.jpg'
+                thumbail_url: '/assets/imgs/thoimienbangngontu.jpg'
+            },
+            {
+                id: 29,
+                name: 'Thôi miên bằng ngôn từ',
+                price: 76000,
+                thumbail_url: '/assets/imgs/thoimienbangngontu.jpg'
+            },{
+                id: 30,
+                name: 'Thuật đọc tâm',
+                price: 76000,
+                thumbail_url: '/assets/imgs/thuatdoctam.jpg'
+            },{
+                id: 31,
+                name: 'Tôi tư duy tôi thành đạt',
+                price: 76000,
+                thumbail_url: '/assets/imgs/toituduytoithanhdat.jpg'
+            },{
+                id: 32,
+                name: 'Tức giận là bản năng tĩnh lặng là bản lĩnh',
+                price: 76000,
+                thumbail_url: '/assets/imgs/tucgianlabannangtinhlanglabanlinh.jpg'
+            },
+            {
+                id: 33,
+                name: 'Tư duy nhanh và chậm',
+                price: 76000,
+                thumbail_url: '/assets/imgs/tuduynhanhvacham.jpg'
             },
         ];
 
@@ -333,11 +364,7 @@
         }
 
 
-        // document.querySelector('#input-search').keypress(function(event) {
-        //     console.log(event);
-        //     var keyword = event.keyCode ? event.keyCode : event.which;
-        //     console.log(keyword);
-        // })
+       
 
         function handleSearchProduct(event) {
             let product_filler_search = [];
@@ -376,12 +403,9 @@
         }
 
 
-        // Modal
         var modal = document.getElementById("myModal");
         var btn = document.getElementById("cart");
         var close = document.getElementsByClassName("close")[0];
-        // tại sao lại có [0] như  thế này bởi vì mỗi close là một html colection nên khi mình muốn lấy giá trị html thì phải thêm [0]. 
-        // Nếu mình có 2 cái component cùng class thì khi [0] nó sẽ hiển thị component 1 còn [1] thì nó sẽ hiển thị component 2.
         var close_footer = document.getElementsByClassName("close-footer")[0];
         var order = document.getElementsByClassName("order")[0];
         btn.onclick = function () {
@@ -416,6 +440,8 @@
                 modal.style.display = "none";
             }
         }
+
+
     </script>
 
     {{content-for "body-footer"}}
