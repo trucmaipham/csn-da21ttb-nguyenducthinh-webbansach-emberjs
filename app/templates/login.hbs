@@ -1,0 +1,41 @@
+{{page-title "Login"}}
+<div class="login">
+      <div class="login__container">
+        <h1>Đăng Nhập</h1>
+        <form>
+          <h5>Email</h5>
+          <input type="text" class="input-login-username" />
+          <h5>Password</h5>
+          <input type="password" class="input-login-password" />
+          <button type="submit" class="login__signInButton">Đăng Nhập</button>
+        </form>
+        <a href="/signup" class="login__registerButton"
+          >Tạo tài khoản mới</a
+        >
+      </div>
+    </div>
+    <script>
+     
+const inputUsername = document.querySelector(".input-login-username");
+const inputPassword = document.querySelector(".input-login-password");
+const btnLogin = document.querySelector(".login__signInButton");
+
+btnLogin.addEventListener("click", (e) => {
+  e.preventDefault();
+  if (inputUsername.value === "" || inputPassword.value === "") {
+    alert("vui lòng không để trống");
+  } else {
+    const user = JSON.parse(localStorage.getItem(inputUsername.value));
+    if (
+      user.username === inputUsername.value &&
+      user.password === inputPassword.value
+    ) {
+      alert("Đăng Nhập Thành Công");
+      window.location.href = "/";
+    } else {
+      alert("Đăng Nhập Thất Bại");
+    }
+  }
+});
+    </script>
+{{outlet}}

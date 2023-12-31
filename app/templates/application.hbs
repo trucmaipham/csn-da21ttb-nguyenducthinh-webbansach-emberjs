@@ -1,0 +1,90 @@
+{{page-title "Project8"}}
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">      
+<header>
+        <nav>
+            <div class="img-nav">           
+            </div>
+            <div class="content-nav">
+                <ul>
+                    <li id="home-link"><a href="/">Trang Chủ</a></li>
+                    <li><a href="/product">Sản phẩm</a></li>
+                    <li><a href="/signup">đăng ký</a></li>
+                    <li><a href="/login">đăng nhập</a></li>
+                </ul>
+                <form>
+                    <input type="text" name="search" placeholder="Tìm kiếm sản phẩm..." />
+                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+            </div>
+            {{!-- The Modal --}}
+            <button id="cart" type="button">
+                <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                Giỏ Hàng
+            </button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Giỏ Hàng</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                            <span class="cart-price cart-header cart-column">Giá</span>
+                            <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                        </div>
+                        <div class="cart-items">
+
+                        </div>
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Tổng Cộng:</strong>
+                            <span class="cart-total-price">0VNĐ</span>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                        <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                    </div>
+                </div>
+            </div>
+
+        
+        </nav>
+       
+
+    </header>
+
+
+    
+
+    {{!-- content --}}
+    <section class="wrapper">             
+                {{outlet}}
+    </section>
+
+    <footer>   
+        <div class="footer-item">
+            <h4> Nguyễn Đức Thịnh-MSSV:110121228-DA21TTB-Tìm hiểu về framework EmberJS </h4>
+            <div class="img-footer">
+                
+            </div>
+            <div class="social-footer">
+                <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100055023455955" rel="noopener noreferrer">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a></li>
+                <li><a target="_blank" href="https://github.com/Ducthinh1501" rel="noopener noreferrer">
+                        <i class="fa fa-github-square" aria-hidden="true"></i>
+                    </a></li>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{rootURL}}assets/vendor.js">
+    </script>
+    <script src="{{rootURL}}assets/my-project-2.js"></script>
+
+
+
