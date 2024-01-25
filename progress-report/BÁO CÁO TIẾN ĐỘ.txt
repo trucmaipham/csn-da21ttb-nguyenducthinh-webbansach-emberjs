@@ -1,0 +1,65 @@
+** Báo cáo tiến độ **
+  Tuần 1:Từ ngày:06/11/2023 đến 12/11/2023.
+1.Nội dung đã thực hiện:
+-Đã hoàn thành đề cương chi tiết cho đề tài.
+-Tìm kiếm,thu thập,tham khảo các tài liệu liên quan đến đề tài.
+ 2.Nội dung công việc đang và sẽ thực hiện
+- Tiến hành xây dựng giao diện cho website qua các tài liệu tham khảo về đề tài.
+- Xây dựng chức năng hiển thị thông tin sản phẩm.
+-Chạy demo và viết báo cáo tiến độ.
+ 3.Những vướng mắc và kiến nghị
+Hiện tại em chưa gặp khó khăn trong việc làm đề tài. Nếu có thắc mắc hay khó
+khăn liên quan đến đề tài thì sẽ hỏi sau.
+
+    Tuần 2:Từ ngày:20/11/2023 đến 26/11/2023.
+1.Nội dung đã thực hiện:
+-Đã hoàn thành giao diện web bán sách.
+-Đã hoàn thành tính năng tìm kiếm sách theo chữ cái.
+-Đã hoàn thành tính năng giỏ hàng thêm vào giỏ hàng.
+2. Nội dung công việc đang và sẽ thực hiện
+- Xây dựng chức năng đăng nhập cho website.
+-Chạy demo và viết báo cáo tiến độ.
+3. Những vướng mắc và kiến nghị
+Hiện tại em chưa gặp khó khăn trong việc làm đề tài. Nếu có thắc mắc hay khó
+khăn liên quan đến đề tài thì sẽ hỏi sau.
+
+    Tuần 3:Từ ngày:27/11/2023 đến 03/12/2023
+1.Nội dung đã thực hiện:
+-Đã hoàn thành giao diện web bán sách.
+-Đã hoàn thành tính năng tìm kiếm sách theo chữ cái.
+-Đã hoàn thành tính năng giỏ hàng thêm vào giỏ hàng.
+-Đã chỉnh sửa các sản phẩm dễ nhìn hơn.
+2. Nội dung công việc đang và sẽ thực hiện
+- Xây dựng chức năng đăng nhập cho website.
+-Chạy demo và viết báo cáo tiến độ.
+3. Những vướng mắc và kiến nghị
+Hiện tại em chưa gặp khó khăn trong việc làm đề tài. Nếu có thắc mắc hay khó
+khăn liên quan đến đề tài thì sẽ hỏi sau.
+
+Tuần 4:04/12/2023 đến 10/12/2023
+1.Nội dung đã thực hiện:
+-Đã hoàn thành giao diện web bán sách.
+-Đã hoàn thành tính năng tìm kiếm sách theo chữ cái.
+-Đã hoàn thành tính năng giỏ hàng thêm vào giỏ hàng.
+-Đã chỉnh sửa các sản phẩm dễ nhìn hơn.
+-Đã thêm các danh mục sản phẩm phân loại sách.
+2. Nội dung công việc đang và sẽ thực hiện
+- Xây dựng chức năng tìm kiếm sản phẩm đã phân loại và thêm vào giỏ hàng và thanh toán.
+-Chạy demo và viết báo cáo tiến độ.
+3. Những vướng mắc và kiến nghị
+Hiện tại em chưa gặp khó khăn trong việc làm đề tài. Nếu có thắc mắc hay khó
+khăn liên quan đến đề tài thì sẽ hỏi sau.
+
+Tuần 5:11/12/2023 đến 17/12/2023
+1.Nội dung đã thực hiện:
+-Đã hoàn thành giao diện web bán sách.
+-Đã hoàn thành tính năng tìm kiếm sách theo chữ cái.
+-Đã hoàn thành tính năng giỏ hàng thêm vào giỏ hàng.
+-Đã chỉnh sửa các sản phẩm dễ nhìn hơn.
+-Đã thêm các danh mục sản phẩm phân loại sách.
+_Đã hoàn thành chức năng tìm kiếm sản phẩm đã phân loại và thêm vào giỏ hàng và thanh toán.
+2. Nội dung công việc đang và sẽ thực hiện
+-Chỉnh lại giao diện các trang.
+3. Những vướng mắc và kiến nghị
+Hiện tại em chưa gặp khó khăn trong việc làm đề tài. Nếu có thắc mắc hay khó
+khăn liên quan đến đề tài thì sẽ hỏi sau.

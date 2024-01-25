@@ -1,0 +1,449 @@
+{{page-title "Product"}}
+<div class="navbar-category" id="container-categories"> </div>
+<div class="products">
+    <ul id="container-products">
+    </ul>
+</div>
+
+{{!-- {{outlet}} --}}
+
+
+<script>
+
+
+        let products = [
+            {
+                id: 1,
+                name: '3 Người thầy vĩ đại',
+                price: 30000,
+                thumbail_url: '/assets/3nguoithayvidai.jpg',
+                category_id: 1
+            },
+            {
+                id: 2,
+                name: 'Biết người dùng người quản người',
+                price: 76000,
+                thumbail_url: '/assets/bietnguoidungnguoiquannguoi.jpg',
+                category_id: 1
+            },
+            {
+                id: 3,
+                name: 'Bí mật tư duy triệu phú',
+                price: 76000,
+                thumbail_url: '/assets/bimattuduytrieuphu.jpg',
+                category_id: 1
+            },
+            {
+                id: 4,
+                name: 'Bước chậm giữa thế gian vội vả',
+                price: 36700,
+                thumbail_url: '/assets/buocchamgiuathegianvoiva.jpg',
+                category_id: 1
+            },
+            {
+                id: 5,
+                name: 'Cảm xúc là kẻ thù số một của của thành công',
+                price: 76000,
+                thumbail_url: '/assets/camxuclakethucuathanhcong.jpg',
+                category_id: 1
+            },
+            {
+                id: 6,
+                name: 'Cây cam ngọt của tôi',
+                price: 76000,
+                thumbail_url: '/assets/caycamngotcuatoi.jpg',
+                category_id: 1
+            },
+            {
+                id: 7,
+                name: 'Cư xử như đàn bà suy nghĩ như đàn ông',
+                price: 76000,
+                thumbail_url: '/assets/cuxunhudanbasuynghinhudanong.jpg',
+                category_id: 2
+            },
+            {
+                id: 8,
+                name: 'Đắc nhân tâm',
+                price: 76000,
+                thumbail_url: '/assets/dacnhantam.jpg',
+                category_id: 2
+            },
+            {
+                id: 9,
+                name: 'Điềm tĩnh và nóng giận',
+                price: 76000,
+                thumbail_url: '/assets/diemtinhvanonggian.jpg',
+                category_id: 2
+            },
+            {
+                id: 10,
+                name: 'Đời ngắn đừng ngủ dài',
+                price: 76000,
+                thumbail_url: '/assets/doingandungngudai.jpg',
+                category_id: 2
+            },
+            {
+                id: 11,
+                name: 'Khéo ăn nói sẽ có được thiên hạ',
+                price: 76000,
+                thumbail_url: '/assets/kheoannoisecoduocthienha.jpg',
+                category_id: 2
+            },
+            {
+                id: 12,
+                name: 'Giận',
+                price: 76000,
+                thumbail_url: '/assets/gian.jpg',
+                category_id: 2
+            },
+            {
+                id: 13,
+                name: 'Không bao giờ là thất bại',
+                price: 76000,
+                thumbail_url: '/assets/khongbaogiolathatbai.jpg',
+                category_id: 3
+            },
+            {
+                id: 14,
+                name: 'Kỷ luật tự giác',
+                price: 76000,
+                thumbail_url: '/assets/kyluattugiac.jpg',
+                category_id: 3
+            },
+            {
+                id: 15,
+                name: 'Làm chủ tư duy thay đổi vận mệnh',
+                price: 76000,
+                thumbail_url: '/assets/lamchutuduythaydoivanmenh.jpg',
+                category_id: 3
+            },
+            {
+                id: 16,
+                name: 'Mình sinh ra đâu phải để buồn',
+                price: 76000,
+                thumbail_url: '/assets/minhsinhradauphaidebuon.jpg',
+                category_id: 3
+            },
+            {
+                id: 17,
+                name: 'Muôn kiếp nhân sinh',
+                price: 76000,
+                thumbail_url: '/assets/muonkiepnhansinh.jpg',
+                category_id: 3
+            },
+            {
+                id: 18,
+                name: 'Nghĩ giàu làm giàu',
+                price: 76000,
+                thumbail_url: '/assets/nghigiaulamgiau.jpg',
+                category_id: 3
+            },
+            {
+                id: 19,
+                name: 'Nghĩ lớn để thành công',
+                price: 76000,
+                thumbail_url: '/assets/nghilondethanhcong.jpg',
+                category_id: 4
+            },
+            {
+                id: 20,
+                name: 'Người giàu có nhất thành Babylon',
+                price: 76000,
+                thumbail_url: '/assets/nguoigiauconhatthanhbabylon.jpg',
+                category_id: 4
+            },
+            {
+                id: 21,
+                name: 'Nhà đầu tư thông minh',
+                price: 76000,
+                thumbail_url: '/assets/nhadaututhongminh.jpg',
+                category_id: 4
+            },
+            {
+                id: 22,
+                name: 'Nhà giả Kim',
+                price: 76000,
+                thumbail_url: '/assets/nhagiakim.jpg',
+                category_id: 4
+            },
+            {
+                id: 23,
+                name: 'Nhà Lãnh đạo không chức danh',
+                price: 76000,
+                thumbail_url: '/assets/nhalanhdaokhongchucdanh.jpg',
+                category_id: 4
+            },
+            {
+                id: 24,
+                name: 'Những đòn tâm lý trong thuyết phục',
+                price: 76000,
+                thumbail_url: '/assets/nhungdontamlytrongthuyetphuc.jpg',
+                category_id: 4
+            },
+            
+            {
+                id: 26,
+                name: 'Tại sao đàn ông thích tình dục',
+                price: 76000,
+                thumbail_url: '/assets/taisaodanongthichtinhduc.jpg',
+                category_id: 4
+            },
+            {
+                id: 27,
+                name: 'Thiên tài bên trái kẻ điên bên phải',
+                price: 76000,
+                thumbail_url: '/assets/thientaibentraikedienbenphai.jpg',
+                category_id: 1
+            },
+            {
+                id: 28,
+                name: 'Thôi miên bằng ngôn từ',
+                price: 76000,
+                thumbail_url: '/assets/thoimienbangngontu.jpg',
+                category_id: 2
+            },
+            {
+                id: 29,
+                name: 'Thôi miên bằng ngôn từ',
+                price: 76000,
+                thumbail_url: '/assets/thoimienbangngontu.jpg',
+                category_id: 3
+            },{
+                id: 30,
+                name: 'Thuật đọc tâm',
+                price: 76000,
+                thumbail_url: '/assets/thuatdoctam.jpg',
+                category_id: 4
+            },{
+                id: 31,
+                name: 'Tôi tư duy tôi thành đạt',
+                price: 76000,
+                thumbail_url: '/assets/toituduytoithanhdat.jpg',
+                category_id: 1
+            },
+            {
+                id: 32,
+                name: 'Tức giận là bản năng tĩnh lặng là bản lĩnh',
+                price: 76000,
+                thumbail_url: '/assets/nonggianlabannangtinhlanglabanlinh.jpg',
+                category_id: 2
+            },
+            {
+                id: 33,
+                name: 'Tư duy nhanh và chậm',
+                price: 76000,
+                thumbail_url: '/assets/tuduynhanhvacham.jpg',
+                category_id: 3
+            },
+        ];
+
+        let categories = [
+            {
+                id: 1,
+                name: 'sách tâm lý',
+            },
+            {
+                id: 2,
+                name: 'sách kinh doanh',
+            },
+            {
+                id: 3,
+                name: 'sách phát triển bản thân',
+            },
+            {
+                id: 4,
+                name: 'Truyền cảm hứng',
+            },
+        ]
+
+        function handleRenderCategories() {
+            let containerCategories = document.querySelector('#container-categories');
+            
+            let categoriesHTML = categories.map(item => {
+                return `
+                    <button class="btn" onclick="handleSelectCategory(${item.id})">${item.name}</button>
+                `;
+            })
+
+            containerCategories.innerHTML = `${categoriesHTML.join('')}`;
+        }
+        
+        function handleSelectCategory(id) {
+            let product_filler = products;
+            if (id) {
+                product_filler = products.filter(item => item.category_id === id);
+            }
+            handleRenderProductIntoPage(product_filler);
+            setEventClickAddCart()
+        }
+
+        function handleRenderProductIntoPage(products) {
+            let containerProduct = document.querySelector('#container-products');
+
+            let productHTML = products.map(item => {
+                return `
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="${item.thumbail_url}"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">${item.name}</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">${item.price}đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                `;
+            })
+
+            containerProduct.innerHTML = `${productHTML.join('')}`;
+        }       
+
+        function handleSearchProduct() {
+            let product_filler_search = products;
+            let params = new URL(document.location).searchParams;
+            let search_key = params.get("search");
+            if (search_key) {
+                product_filler_search = products.filter(item => item.name.toLocaleLowerCase().indexOf(search_key.toLocaleLowerCase()) >= 0);
+            }
+            handleRenderProductIntoPage(product_filler_search);
+        }
+
+
+        handleRenderCategories();
+        handleSearchProduct();
+
+    </script>
+
+    
+<script>    
+                // Modal
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("cart");
+        var close = document.getElementsByClassName("close")[0];       
+        var close_footer = document.getElementsByClassName("close-footer")[0];
+        var order = document.getElementsByClassName("order")[0];
+        btn.onclick = function () {
+        modal.style.display = "block";
+        }
+        close.onclick = function () {
+        modal.style.display = "none";
+        }
+        close_footer.onclick = function () {
+        modal.style.display = "none";
+        }
+        order.onclick = function () {
+        alert("Cảm ơn bạn đã thanh toán đơn hàng")
+        }
+        window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        }
+
+        var remove_cart = document.getElementsByClassName("btn-danger");
+for (var i = 0; i < remove_cart.length; i++) {
+  var button = remove_cart[i]
+  button.addEventListener("click", function () {
+    var button_remove = event.target
+    button_remove.parentElement.parentElement.remove()
+  })
+}
+
+// update cart 
+function updatecart() {
+  var cart_item = document.getElementsByClassName("cart-items")[0];
+  var cart_rows = cart_item.getElementsByClassName("cart-row");
+  var total = 0;
+  for (var i = 0; i < cart_rows.length; i++) {
+    var cart_row = cart_rows[i]
+    var price_item = cart_row.getElementsByClassName("cart-price ")[0]
+    var quantity_item = cart_row.getElementsByClassName("cart-quantity-input")[0]
+    var price = parseFloat(price_item.innerText)
+    var quantity = quantity_item.value 
+    total = total + (price * quantity)
+  }
+  document.getElementsByClassName("cart-total-price")[0].innerText = total + 'VNĐ'
+
+}
+
+
+var quantity_input = document.getElementsByClassName("cart-quantity-input");
+for (var i = 0; i < quantity_input.length; i++) {
+  var input = quantity_input[i];
+  input.addEventListener("change", function (event) {
+    var input = event.target
+    if (isNaN(input.value) || input.value <= 0) {
+      input.value = 1;
+    }
+    updatecart()
+  })
+}
+
+function setEventClickAddCart() {
+    var add_cart = document.getElementsByClassName("btn-cart");
+    for (var i = 0; i < add_cart.length; i++) {
+    var add = add_cart[i];
+    add.addEventListener("click", function (event) {
+
+        var button = event.target;
+        var product = button.parentElement.parentElement;
+        var img = product.parentElement.getElementsByClassName("img-prd")[0].src
+        var title = product.getElementsByClassName("content-product-h3")[0].innerText
+        var price = product.getElementsByClassName("price")[0].innerText
+        addItemToCart(title, price, img)
+        
+        modal.style.display = "block";
+        
+        updatecart()
+    })
+    }
+}
+setEventClickAddCart()
+
+
+function addItemToCart(title, price, img) {
+  var cartRow = document.createElement('div')
+  cartRow.classList.add('cart-row')
+  var cartItems = document.getElementsByClassName('cart-items')[0]
+  var cart_title = cartItems.getElementsByClassName('cart-item-title')
+  for (var i = 0; i < cart_title.length; i++) {
+    if (cart_title[i].innerText == title) {
+      alert('Sản Phẩm Đã Có Trong Giỏ Hàng')
+      return
+    }
+  }
+
+  var cartRowContents = `
+  <div class="cart-item cart-column">
+      <img class="cart-item-image" src="${img}" width="100" height="100">
+      <span class="cart-item-title">${title}</span>
+  </div>
+  <span class="cart-price cart-column">${price}</span>
+  <div class="cart-quantity cart-column">
+      <input class="cart-quantity-input" type="number" value="1">
+      <button class="btn btn-danger" type="button">Xóa</button>
+  </div>`
+  cartRow.innerHTML = cartRowContents
+  cartItems.append(cartRow)
+  cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', function () {
+    var button_remove = event.target
+    button_remove.parentElement.parentElement.remove()
+    updatecart()
+  })
+  cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', function (event) {
+    var input = event.target
+    if (isNaN(input.value) || input.value <= 0) {
+      input.value = 1;
+    }
+    updatecart()
+  })
+}
+
+
+</script>
