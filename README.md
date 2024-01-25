@@ -17,7 +17,7 @@
 Tạo dự án thành công!
 
 7. Di chuyển vào thư mục chứa dự  án vừa tạo
-	cd my-project-2
+	cd csn-da21ttb-nguyenducthinh-webbansach-emberjs
 8. Mở VSCode
 	Cách 1: Mở VSCode, mở thư mục dự án như thông thường
 	Cách 2: Mở VSCode bằng cửa sổ dòng lệnh
